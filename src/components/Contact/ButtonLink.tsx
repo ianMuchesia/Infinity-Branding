@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 interface ButtonLinkProps {
@@ -12,7 +13,7 @@ const buttonStyles =
 
 const ButtonLink = ({className,href ,bgColor,children}:ButtonLinkProps) => {
   return (
-    <a
+    <Link
 			className="relative focus:outline-none capitalize"
 			href={href}
 			target="_blank"
@@ -20,13 +21,13 @@ const ButtonLink = ({className,href ,bgColor,children}:ButtonLinkProps) => {
 		>
 			<span
 				className={`${buttonStyles} ${className || "px-4 py-2"} ${
-					bgColor || "bg-navy-green"
+					bgColor || "bg-black-500"
 				}  `}
 			>
 				{children}
 			</span>
-			<span className="absolute inset-0 rounded-md -z-10 bg-green"></span>
-		</a>
+			<span className="absolute inset-0 rounded-md -z-10 bg-blue-500"></span>
+		</Link>
   )
 }
 

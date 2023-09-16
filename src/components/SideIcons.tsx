@@ -1,4 +1,5 @@
 import data from '@/data';
+import Link from 'next/link';
 import React from 'react'
 
 const {tools} = data;
@@ -8,7 +9,7 @@ const SideIcons = () => {
     <ul className="flex items-center space-x-3 md:space-x-0 md:justify-start md:flex-col">
 			{tools.map((tool) => (
 				<li key={tool.id}>
-					<a
+					<Link
 						href={"/"}
 						title={tool.name}
 						className="p-[10px] inline-block transition-normal md:hover:-translate-y-[3px] hover:text-green"
@@ -16,7 +17,7 @@ const SideIcons = () => {
 						rel="noreferrer"
 					>
 						<tool.icon size={20} />
-					</a>
+					</Link>
 				</li>
 			))}
 			<span className="hidden md:block w-[1px] h-[90px] bg-blue-500 mt-5 mx-auto"></span>

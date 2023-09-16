@@ -5,6 +5,7 @@ import MobileNavbar from './MobileNavbar';
 import Image from 'next/image';
 import FadeIn from '@/Animations/FadeIn';
 import SideLinks from '../SideLinks';
+import Link from 'next/link';
 
 
 interface Props {
@@ -45,7 +46,7 @@ const NavbarContainer = ({ toggleMenu, isOpen }: Props) => {
             >
                 <nav className="flex items-center justify-between w-full">
                 <FadeIn delay={0.2}>
-                    <a href="/"
+                    <Link href="/"
                         className='text-blue-400'
                     >
                       <Image
@@ -56,7 +57,7 @@ const NavbarContainer = ({ toggleMenu, isOpen }: Props) => {
                       />
 
 
-                    </a>
+                    </Link>
                     </FadeIn>
                     <FadeIn delay={0.2}>
                     <Hamburger

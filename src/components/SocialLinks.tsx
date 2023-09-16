@@ -1,4 +1,5 @@
 import data from '@/data';
+import Link from 'next/link';
 import React from 'react'
 const { socials } = data;
 const SocialLinks = () => {
@@ -6,7 +7,7 @@ const SocialLinks = () => {
     <ul className="flex items-center space-x-3 ">
     {socials.map((social) => (
         <li key={social.id}>
-            <a
+            <Link
                 href={social.url}
                 title={social.name}
                 className="p-[10px] inline-block transition-normal md:hover:-translate-y-[3px] hover:text-blue-700"
@@ -14,7 +15,7 @@ const SocialLinks = () => {
                 rel="noreferrer"
             >
                 <social.icon size={20} />
-            </a>
+            </Link>
         </li>
     ))}
    
