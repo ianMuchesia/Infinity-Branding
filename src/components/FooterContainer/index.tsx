@@ -2,6 +2,7 @@ import DivContainer from '@/Animations/DivContainer'
 import React from 'react'
 import InlineLink from './InlineLink'
 import SocialLinks from '../SocialLinks'
+import Link from 'next/link'
 
 const FooterContainer = () => {
   return (
@@ -10,19 +11,19 @@ const FooterContainer = () => {
 				<SocialLinks />
 			</DivContainer>
 			<DivContainer className="space-y-1 text-[13px] tracking-wide">
-				<a
+				<Link
 					href="https://github.com/ianMuchesia"
 					target="_blank"
 					rel="noreferrer"
 					className="transition-normal hover:text-blue-700"
 				>
-					Built by Infintiy Branding,Douglas Atiya and Msodoki
-				</a>
+					Built by Infintiy Branding and Msodoki
+				</Link>
 				<p>
 					Design inspired by{" "}
 					<InlineLink
 						href="/"
-						text="Msodoki Mwanza Mwanza"
+						text="Hillary Ouma"
 					/>{" "}
 					and{" "}
 					<InlineLink

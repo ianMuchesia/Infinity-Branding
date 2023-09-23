@@ -10,7 +10,7 @@ w-full px-4 py-3 mb-4  bg-black-400 border border-black-600 rounded-md focus:out
 const Contact = () => {
   return (
     <section id="contact" className="section mb-[50px]">
-    <Heading className="numbered-heading" data-num="02">
+    <Heading className="numbered-heading" data-num="04">
         Contact Us
     </Heading>
     <DivContainer

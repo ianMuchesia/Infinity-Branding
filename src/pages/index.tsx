@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import Services from '@/components/Services'
+import Team from '@/components/Team'
 
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
     <main className="px-6 sm:px-12 md:px-24 lg:px-36 max-w-[1600px] min-h-screen mx-auto">
       <Hero/>
       <About/>
+      <Services/>
+    <Team/>
       <Contact/>
     </main>
     </>

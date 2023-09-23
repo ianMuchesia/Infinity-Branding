@@ -11,7 +11,10 @@ import {
   AiFillFacebook,
   AiFillInstagram,
   AiFillTwitterCircle,
+  AiOutlineBlock,
 } from "react-icons/ai";
+
+import { FaDiceD20, FaCube, FaUsersGear } from "react-icons/fa6";
 
 const data = {
   pageSections: ["about", "projects", "skills"],
@@ -90,6 +93,53 @@ const data = {
       icon: AiFillInstagram,
     },
   ],
+  cards: [
+    {
+      id: 1,
+      title: " Design and Branding",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptate.",
+      icon: FaDiceD20,
+    },
+    {
+      id: 2,
+      title: "Branding Strategy",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptate.",
+      icon: FaCube,
+    },
+    {
+      id: 3,
+      title: "Digital Marketing",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptate.",
+      icon: FaUsersGear,
+    },
+  ],
+  team:[
+    {
+      id:1,
+      name:"Douglas Atiya",
+      position:"CEO",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptate.",
+      src:"/image_1.jpg",
+    },
+    {
+      id:2,
+      name:"Hillary Ouma",
+      position:"Product Manager",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptate.",
+      src:"/image_7.jpg",
+    },
+    {
+      id:3,
+      name:"Msodoki Mwanza Mwanza",
+      position:"Software Developer",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptate.",
+      src:"/image_3.jpg",
+    },
+
+  ]
 };
 
 export default data;
